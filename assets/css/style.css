@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+body {
+  background-color: rgba(104, 103, 103, 0.218);
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#tareasInput {
+  width: 70vw;
+  height: 30px;
+  border: 1px solid rgb(170, 169, 169);
+}
+
+#AgregarTareaBtn {
+  color: white;
+  background-color: rgb(2, 108, 2);
+  border: 0;
+  width: 100px;
+  height: 33px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#tareas {
+  display: grid;
+  grid-template-areas: "resumen tareas";
+  grid-template-columns: 40% 60%;
+}
+
+#conteo {
+  grid-area: resumen;
+}
+
+#listas {
+  grid-area: tareas;
+  display: grid;
+  grid-template-areas:
+    "listaTareasTitulo1 listaTareasTitulo2 iconosTitulo"
+    "idTareas listaTareas iconos";
+  grid-template-columns: 10% 30% 60%;
+  grid-template-rows: 45px 80px;
+}
+
+#listaTareasTitulo1 {
+  grid-area: listaTareasTitulo1;
+}
+
+#listaIdContainer {
+  grid-area: idTareas;
+}
+
+#listaTareasTitulo2 {
+  grid-area: listaTareasTitulo2;
+}
+
+#listaTareasContainer {
+  grid-area: listaTareas;
+}
+
+.listas {
+  font-size: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.titulo {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.quitar {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  color: red;
+  font-size: 22px;
+}
+
+#iconos label {
+  display: flex;
+}
+
+#iconos button {
+  margin-left: 20px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
