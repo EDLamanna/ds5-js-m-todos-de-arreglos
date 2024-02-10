@@ -97,3 +97,7 @@ ul {
 input[type="checkbox"] {
   transform: scale(1.5);
 }
+
+.realizada {
+  color: green;
+}
